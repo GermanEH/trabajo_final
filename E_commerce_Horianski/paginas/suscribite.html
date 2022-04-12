@@ -1,0 +1,142 @@
+div<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="https://png.pngtree.com/png-vector/20191010/ourmid/pngtree-rain-with-thunderstorm-icon-flat-style-png-image_1808831.jpg">
+    <link rel="stylesheet" href="../hoja_de_estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Ramaraja&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid">
+        <header id="inicio" class="centrar"> 
+            <h1>Burya</h1>
+        </header>
+        <nav class="centrar">
+            <ul> 
+                <li><a href="../index.html" class="sin_decoracion">Home</a></li>
+                <li><a href="pantalones.html" class="sin_decoracion">Pantalones</a></li>
+                <li><a href="chombas.html" class="sin_decoracion">Chombas</a></li>
+                <li><a href="nosotros.html" class="sin_decoracion">Nosotros</a></li>
+                <li><a href="suscribite.html" class="sin_decoracion">Suscribite</a></li>
+            </ul>            
+        </nav>
+        <section class="section">
+        </section>
+        <div class="encabezado">
+            <h3 class="centrar">¡Suscribite a nuestro newsletter <br>
+                para obtener las últimas novedades sobre:
+                        <ul class="sin_decoracion columna letra_grande">
+                            <li>nuestros productos</li>
+                            <ul class="sin_decoracion">
+                                <li>1. Pantalones</li>
+                                <li>2. Chombas</li>
+                            </ul>
+                            <li>promociones</li>
+                            <li>descuentos</li>
+                            <li>y más!</li>
+                        </ul>
+                    </h3>
+        </div>
+        <div class="subtitulo_1 centrar">
+            <h3>
+                Te pediremos algunos datos personales para adaptar las novedades a tu perfil:
+            </h3>
+        </div>
+        <div class="formulario_1 centrar">
+            <form action="envio.php" method="post">
+                <fieldset class="letra_grande">
+                    <legend>Datos personales</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="Nombre" placeholder="Ingresá acá tu nombre!" class="letra_grande">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="Apellido" placeholder="Ingresá acá tu apellido!" class="letra_grande">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="Mail" placeholder="Ingresá acá tu email!" class="letra_grande">
+                    </div>
+                    <div>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="password" placeholder="Ingresá acá tu contraseña!"
+                            class="letra_grande">
+                    </div>
+                    <div>
+                        <label for="genero">Género</label>
+                        <input type="radio" name="genero" value="Hombre">Hombre<br>
+                        <input type="radio" name="genero" value="Mujer">Mujer
+                    </div>
+                    <div>
+                        <label for="fecha_de_nacimiento">Fecha de nacimiento</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar!"><input type="reset" value="Limpiar">
+                        <input type="button" value="Sin acciones">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="subtitulo_2 centrar">
+            <h3>Quiero recibir noticias sobre:</h3>
+        </div>
+        <div class="formulario_2 centrar">
+            <form action="envio.php" method="post">
+                <fieldset class="letra_grande">
+                    <legend>Contenido</legend>
+                    <div>
+                        <ul class="sin_decoracion">
+                            <li><input type="checkbox" name="noticias">nuevos pantalones</li>
+                            <li><input type="checkbox" name="noticias">nuevas chombas</li>
+                            <li><input type="checkbox" name="noticias">promociones</li>
+                            <li><input type="checkbox" name="noticias">descuentos</li>
+                            <li><input type="checkbox" name="noticias">eventos especiales</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Sugerencias:</p>
+                    </div>
+                    <div>
+                        <textarea name="contenido" id="" cols="30" rows="5"
+                            placeholder="Sugiérenos contenido interesante!"></textarea>
+                    </div>
+                    <div>
+                        Selecciona la frecuencia de la información que recibirás por mail:
+                    </div>
+                    <div>
+                        <select name="frecuencia" id=""><br>
+                            <option value="">Selecciona</option>
+                            <option value="semanal">Semanal</option>
+                            <option value="mensual">Mensual</option>
+                            <option value="trimestral">Trimestral</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar!"><input type="reset" value="Limpiar">
+                        <input type="button" value="Sin acciones">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="boton_regreso centrar">
+            <a href="#inicio" class="boton_regreso_link sin_decoracion">Volver al inicio</a>
+        </div>
+        <footer id="pie" class="centrar">
+            <p>© Copyright 2022 SA BURYA | Todos los derechos reservados.</p>
+            <a href="#" target="_blank"><img src="../imagenes/fb.jpg" alt="Facebook" title="Facebook"></a>
+            <a href="#" target="_blank"><img src="../imagenes/ig.jpg" alt="Instagram" title="Instagram"></a>
+            <a href="#" target="_blank"><img src="../imagenes/tw.jpg" alt="Twitter" title="Twitter"></a>
+            <a href="#" target="_blank"><img src="../imagenes/yt.jpg" alt="Youtube" title="Youtube"></a>
+            <a href="#" target="_blank"><img src="../imagenes/pi.jpg" alt="Pinterest" title="Pinterest"></a>
+        </footer>
+        </div>
+        </body>
+
+        </html>
