@@ -1,0 +1,484 @@
+@charset "UTF-8";
+/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Diseño Mobile */
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "nav" "section" "encabezado" "subtitulo_a" "producto1_imagen" "producto1_descripcion" "subtitulo_b" "producto2_imagen" "producto2_descripcion" "boton_regreso" "footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+  .encabezado {
+    grid-area: encabezado;
+  }
+
+  .subtitulo_a {
+    grid-area: subtitulo_a;
+  }
+
+  .pantalon_imagen {
+    grid-area: producto1_imagen;
+  }
+
+  .producto1_imagen {
+    grid-area: producto1_imagen;
+  }
+
+  .subtitulo_1 {
+    grid-area: producto1_imagen;
+  }
+
+  .pantalon_lema {
+    grid-area: producto1_descripcion;
+  }
+
+  .producto1_descripcion {
+    grid-area: producto1_descripcion;
+  }
+
+  .subtitulo_b {
+    grid-area: subtitulo_b;
+  }
+
+  .formulario_1 {
+    grid-area: producto1_descripcion;
+  }
+
+  .chomba_imagen {
+    grid-area: producto2_imagen;
+  }
+
+  .producto2_imagen {
+    grid-area: producto2_imagen;
+  }
+
+  .formulario_2 {
+    grid-area: producto2_imagen;
+  }
+
+  .chomba_lema {
+    grid-area: producto2_descripcion;
+  }
+
+  .producto2_descripcion {
+    grid-area: producto2_descripcion;
+  }
+
+  .subtitulo_2 {
+    grid-area: producto2_descripcion;
+  }
+
+  .boton_regreso {
+    grid-area: boton_regreso;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+/* Diseño Desktop */
+@media screen and (min-width: 481px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 150px 100px repeat(5, 1fr) 250px 100px;
+    grid-template-areas: "header header header header" "nav nav nav nav" "section section section section" ".. encabezado encabezado .." ".. encabezado encabezado .." ".. subtitulo_a subtitulo_a .." ".. producto1_imagen producto1_descripcion .." ".. subtitulo_b subtitulo_b .." ".. producto2_descripcion producto2_imagen .." ".. boton_regreso boton_regreso .." "footer footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  .section {
+    grid-area: section;
+  }
+
+  .subtitulo_a {
+    grid-area: subtitulo_a;
+  }
+
+  .encabezado {
+    grid-area: encabezado;
+  }
+
+  .pantalon_imagen {
+    grid-area: producto1_imagen;
+  }
+
+  .producto1_imagen {
+    grid-area: producto1_imagen;
+  }
+
+  .subtitulo_1 {
+    grid-area: producto1_imagen;
+  }
+
+  .pantalon_lema {
+    grid-area: producto1_descripcion;
+  }
+
+  .producto1_descripcion {
+    grid-area: producto1_descripcion;
+  }
+
+  .formulario_1 {
+    grid-area: producto1_descripcion;
+  }
+
+  .subtitulo_b {
+    grid-area: subtitulo_b;
+  }
+
+  .chomba_imagen {
+    grid-area: producto2_imagen;
+  }
+
+  .producto2_imagen {
+    grid-area: producto2_imagen;
+  }
+
+  .formulario_2 {
+    grid-area: producto2_imagen;
+  }
+
+  .chomba_lema {
+    grid-area: producto2_descripcion;
+  }
+
+  .producto2_descripcion {
+    grid-area: producto2_descripcion;
+  }
+
+  .subtitulo_2 {
+    grid-area: producto2_descripcion;
+  }
+
+  .boton_regreso {
+    grid-area: boton_regreso;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+html {
+  font-size: 100%;
+}
+
+h1 {
+  margin: 30px 0px 15px;
+  font-size: 90px;
+  font-family: "Ramaraja";
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Gideon Roman";
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+  margin: 30px;
+}
+
+nav ul li, nav ul li a {
+  font-weight: bold;
+}
+
+p {
+  font-size: large;
+  font-family: "Gideon Roman";
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+}
+
+.sin_decoracion {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.letra_grande {
+  font-size: 20px;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(222, 230, 233), rgb(95, 174, 219));
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li > p, nav ul li a {
+    color: brown;
+  }
+
+  nav ul li a:hover {
+    background-color: aqua;
+  }
+
+  .boton_regreso_link:hover {
+    background-color: blueviolet;
+  }
+}
+@media screen and (min-width: 481px) {
+  nav ul li, nav ul li a {
+    color: brown;
+  }
+
+  nav ul li a:hover {
+    background-color: aqua;
+  }
+
+  .boton_regreso_link:hover {
+    background-color: blueviolet;
+  }
+}
+.centrar, .columna {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna {
+  flex-direction: column;
+}
+
+.mediano {
+  border-radius: 20px;
+  width: 200px;
+  height: 300px;
+}
+.mediano:hover {
+  transition: ease;
+  transition-duration: 2s;
+  transform: scale(1.2);
+}
+
+fieldset {
+  padding: 60px;
+}
+
+/* Diseño Mobile */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  nav ul li {
+    font-size: 20px;
+    margin: 5px;
+    padding: 20px;
+    width: 10px 5px 10px 5px;
+  }
+  nav ul li:hover {
+    border-radius: 20px;
+  }
+
+  .boton_regreso_link {
+    font-weight: bold;
+  }
+  .boton_regreso_link:hover {
+    background-color: blueviolet;
+    background-size: 10px 5px 10px 5px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  footer img {
+    border-radius: 0px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* Diseño Desktop */
+@media screen and (min-width: 481px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  nav ul li {
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    width: 10px 5px 10px 5px;
+  }
+  nav ul li:hover {
+    border-radius: 20px;
+  }
+
+  .boton_regreso_link {
+    font-weight: bold;
+  }
+  .boton_regreso_link:hover {
+    background-color: blueviolet;
+    background-size: 10px 5px 10px 5px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  footer img {
+    border-radius: 10px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.nav > li {
+  float: left;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li ul li {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+}
+
+.slide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(300px + 3em);
+}
+
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.slide-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.slide-control.prev {
+  left: 2%;
+}
+
+.slide-control.next {
+  right: 2%;
+}
+
+.slide-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+  display: block;
+}
+
+.slide-indicador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-indicador li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slide-circulo {
+  color: #828282;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slide-circulo:hover {
+  color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
+  color: #428bca;
+}
+
+#titulo {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

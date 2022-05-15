@@ -1,0 +1,34 @@
+$color_1: brown;
+$color_2: aqua;
+$color_3: blueviolet; 
+
+body {
+    background:linear-gradient(to bottom, rgb(222, 230, 233), rgb(95, 174, 219));
+}  
+@media screen and (max-width:768px) {
+    nav ul li > p, nav ul li a {
+        color:$color_1;
+    }
+    
+    nav ul li a:hover {
+        background-color:$color_2;
+    }
+    
+    .boton_regreso_link:hover {
+        background-color:$color_3;
+    }
+}
+
+@media screen and (min-width:481px) {
+    nav ul li, nav ul li a {
+        color:$color_1;
+    }
+    
+    nav ul li a:hover {
+        background-color:$color_2;
+    }
+    
+    .boton_regreso_link:hover {
+        background-color:$color_3;
+    }
+}

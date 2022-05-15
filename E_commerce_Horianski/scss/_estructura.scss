@@ -1,0 +1,203 @@
+/* Diseño Mobile */
+
+@media screen and (max-width:768px) {
+    .grid { 
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section"
+            "encabezado"
+            "subtitulo_a"
+            "producto1_imagen"
+            "producto1_descripcion"
+            "subtitulo_b"
+            "producto2_imagen"
+            "producto2_descripcion"
+            "boton_regreso"
+            "footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    .encabezado {
+        grid-area: encabezado;
+    }
+
+    .subtitulo_a {
+        grid-area: subtitulo_a;
+    }
+
+    .pantalon_imagen {
+        grid-area: producto1_imagen;
+    }
+
+    .producto1_imagen {
+        grid-area: producto1_imagen;
+    }
+
+    .subtitulo_1 {
+        grid-area: producto1_imagen;
+    }
+
+    .pantalon_lema {
+        grid-area: producto1_descripcion;
+    }
+
+    .producto1_descripcion {
+        grid-area: producto1_descripcion;
+    }
+
+    .subtitulo_b {
+        grid-area: subtitulo_b;
+    }
+
+    .formulario_1 {
+        grid-area:producto1_descripcion;
+    }
+
+    .chomba_imagen {
+        grid-area: producto2_imagen;
+    }
+
+    .producto2_imagen {
+        grid-area: producto2_imagen;
+    }
+    
+    .formulario_2 {
+        grid-area:producto2_imagen;
+    }
+    
+    .chomba_lema {
+        grid-area:producto2_descripcion;
+    }
+
+    .producto2_descripcion {
+        grid-area:producto2_descripcion;
+    }
+
+    .subtitulo_2 {
+        grid-area:producto2_descripcion;
+    }
+
+    .boton_regreso {
+        grid-area: boton_regreso;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+ 
+/* Diseño Desktop */
+
+@media screen and (min-width:481px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 150px 100px repeat(5, 1fr) 250px 100px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "section section section section"
+            ".. encabezado encabezado .."
+            ".. encabezado encabezado .."
+            ".. subtitulo_a subtitulo_a .."
+            ".. producto1_imagen producto1_descripcion .."
+            ".. subtitulo_b subtitulo_b .."
+            ".. producto2_descripcion producto2_imagen .."
+            ".. boton_regreso boton_regreso .."
+            "footer footer footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    .section {
+        grid-area: section;
+    }
+
+    .subtitulo_a {
+        grid-area: subtitulo_a;
+    }
+
+    .encabezado {
+        grid-area: encabezado;
+    }
+
+    .pantalon_imagen {
+        grid-area: producto1_imagen;
+    }
+
+    .producto1_imagen {
+        grid-area: producto1_imagen;
+    }
+
+    .subtitulo_1 {
+        grid-area: producto1_imagen;
+    }
+
+    .pantalon_lema {
+        grid-area: producto1_descripcion;
+    }
+
+    .producto1_descripcion {
+        grid-area: producto1_descripcion;
+    }
+
+    .formulario_1 {
+        grid-area:producto1_descripcion;
+    }
+
+    .subtitulo_b {
+        grid-area: subtitulo_b;
+    }
+
+    .chomba_imagen {
+        grid-area: producto2_imagen;
+    }
+
+    .producto2_imagen {
+        grid-area: producto2_imagen;
+    }
+    
+    .formulario_2 {
+        grid-area:producto2_imagen;
+    }
+    
+    .chomba_lema {
+        grid-area:producto2_descripcion;
+    }
+
+    .producto2_descripcion {
+        grid-area:producto2_descripcion;
+    }
+
+    .subtitulo_2 {
+        grid-area:producto2_descripcion;
+    }
+
+    .boton_regreso {
+        grid-area: boton_regreso;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}

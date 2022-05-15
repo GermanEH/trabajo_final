@@ -1,0 +1,48 @@
+$tipografia-general:'Gideon Roman';
+$tipografia-alternativa:'Ramaraja';
+
+$fuente-normal:1em;
+$fuente-pequena:0.5em;
+$fuente-grande:2em;
+
+html {
+    font-size: 100%;
+}
+
+h1 {
+    margin: 30px 0px 15px;
+    font-size: 90px;
+    font-family: 'Ramaraja'; 
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Gideon Roman';
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    margin: 30px;
+}
+
+nav ul li, nav ul li a {
+                        font-weight: bold;
+}
+
+
+p {
+    font-size: large;
+    font-family: 'Gideon Roman';
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+}
+
+.sin_decoracion {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.letra_grande {
+    font-size: 20px;
+}
